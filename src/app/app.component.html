@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<button (click)="prev()"> < </button>
+<input type="text" matInput
+    ngxDaterangepickerMd
+  [alwaysShowCalendars]="true"
+    [locale]="{applyLabel: 'ok', format: 'DD-MM-YYYY'}"
+    [(ngModel)]="selected"
+  [ranges]="ranges"
+    name="daterange"/>
+<button (click)="next()"> ></button>
+<p>
+	<button class="ngx-daterangepicker-action" type="button" (click)="open()">Open</button>
+	Selected: {{selected | json}}
+</p>
