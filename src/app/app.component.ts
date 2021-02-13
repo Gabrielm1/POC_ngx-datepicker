@@ -16,6 +16,10 @@ export class AppComponent {
     "Last Month": [
       new Date(new Date().getFullYear(), new Date().getMonth() - 1, 1),
       new Date(new Date().getFullYear(), new Date().getMonth(), 0)
+    ],
+    "Last Year": [
+      new Date(new Date().getFullYear() - 1, 0, 1),
+      new Date(new Date().getFullYear() - 1, 11, 31)
     ]
   };
   constructor() {
